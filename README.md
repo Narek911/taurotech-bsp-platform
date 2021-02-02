@@ -1,14 +1,31 @@
 # Tauro Technologies BSP Platform
 
-The Default:
+To get the BSP you need to have repo installed and use it as:
 
-Use rock960-rk3399.xml as default manifest
---
+Install the repo utility:
 
-The Rock960 Model With RK3399 chips
+$: mkdir ~/bin
+$: curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+$: chmod a+x ~/bin/repo
 
-$ repo init --repo-url=https://github.com/rockchip-linux/repo --no-clone-bundle -u https://github.com/rockchip-linux/manifests -b master -m rock960-rk3399.xml
+Download the BSP source:
 
-$ repo sync --no-clone-bundle
+$: PATH=${PATH}:~/bin
+$: mkdir ~/taurotech-bsp-yocto
+$ cd ~/taurotech-bsp-yocto
+$ repo init -u https://github.com/varigit/variscite-bsp-platform.git -b master
+$ repo sync -j4
+
+At the end of the commands you have every metadata you need to start work with.
+
+To start a simple image build:
+
+$: MACHINE=<machine> DISTRO=<distro> source ./setup-environment <build directory>
+$: bitbake core-image-base
+
+You can use any directory to host your build.
+
+The source code is checked out at taurotech-bsp-yocto/sources.
+
 
 
