@@ -15,9 +15,9 @@
   <project remote="rockchip"  revision="5718cc490614c9978f088bae9548431463bbf7fc" upstream="yocto-next" name="meta-rockchip"          path="sources/meta-rockchip"/>
   <project remote="taurotech" revision="c0156d5961e755b8934ccfe5ed9fe080b08fa60f" upstream="master"     name="taurotech-bsp-platform" path="sources/taurotech-bsp-platform"/>
 
-  <project remote="taurotech" revision="master" name="taurotech-bsp-platform/taurotech-bsp-base" path="sources/base">
-	  <copyfile dest="README" src="README"/>
-	  <copyfile dest="setup-environment" src="setup-environment"/>
+  <project remote="taurotech" revision="master" name="taurotech-bsp-platform" path="sources/base">
+	  <copyfile dest="README" src="taurotech-bsp-base/README"/>
+	  <copyfile dest="setup-environment" src="taurotech-bsp-base/setup-environment"/>
   </project>
 
 </manifest>
