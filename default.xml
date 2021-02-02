@@ -14,7 +14,7 @@
   <project remote="rockchip"  revision="yocto-next" name="meta-rockchip"      path="sources/meta-rockchip"/>
   <project remote="taurotech" revision="master"     name="meta-taurotech-bsp" path="sources/meta-taurotech-bsp"/>
 
-  <project remote="taurotech" revision="master" name="taurotech-bsp-base" path="sources/base">
+  <project remote="Narek911" revision="master" name="taurotech-bsp-base" path="sources/base">
 	<copyfile dest="README" src="README"/>
 	<copyfile dest="setup-environment" src="setup-environment"/>
   </project>
