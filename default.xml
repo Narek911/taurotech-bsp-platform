@@ -11,15 +11,15 @@
   <remote fetch="https://github.com/sbabic"        name="sbabic"/>
   <remote fetch="https://github.com/varigit"       name="variscite"/>
 
-  <project remote="yocto"     upstream="pyro" name="poky" path="sources/poky"/>
-  <project remote="yocto"     upstream="pyro" name="meta-freescale" path="sources/meta-freescale"/>
-  <project remote="oe"        upstream="pyro" name="meta-openembedded" path="sources/meta-openembedded"/>
-  <project remote="freescale" upstream="pyro" name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty"/>
-  <project remote="freescale" upstream="pyro" name="meta-freescale-distro" path="sources/meta-freescale-distro"/>
-  <project remote="QT5"       upstream="pyro" name="meta-qt5" path="sources/meta-qt5"/>
-  <project remote="OSSystems" upstream="morty" name="meta-browser" path="sources/meta-browser"/>
-  <project remote="sbabic"    upstream="pyro" name="meta-swupdate" path="sources/meta-swupdate"/>
-  <project remote="variscite"  upstream="pyro" name="meta-variscite-fslc" path="sources/meta-variscite-fslc"/>
+  <project remote="yocto"     revision="HEAD" upstream="pyro" name="poky" path="sources/poky"/>
+  <project remote="yocto"     revision="HEAD" upstream="pyro" name="meta-freescale" path="sources/meta-freescale"/>
+  <project remote="oe"        revision="HEAD" upstream="pyro" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="freescale" revision="HEAD" upstream="pyro" name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty"/>
+  <project remote="freescale" revision="HEAD" upstream="pyro" name="meta-freescale-distro" path="sources/meta-freescale-distro"/>
+  <project remote="QT5"       revision="HEAD" upstream="pyro" name="meta-qt5" path="sources/meta-qt5"/>
+  <project remote="OSSystems" revision="HEAD" upstream="morty" name="meta-browser" path="sources/meta-browser"/>
+  <project remote="sbabic"    revision="HEAD" upstream="pyro" name="meta-swupdate" path="sources/meta-swupdate"/>
+  <project remote="variscite"  revision="HEAD" upstream="pyro" name="meta-variscite-fslc" path="sources/meta-variscite-fslc"/>
 
   <project remote="variscite" revision="pyro" name="variscite-bsp-base" path="sources/base">
 	<copyfile dest="README" src="README"/>
