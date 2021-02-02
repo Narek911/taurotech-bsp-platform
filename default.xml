@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <default sync-j="4" revision="master"/>
+  <default sync-j="4" revision="pyro"/>
 
-  <remote fetch="https://git.yoctoproject.org/git"  name="yocto"/>
-  <remote fetch="https://github.com/openembedded"   name="oe"/>
-  <remote fetch="git://github.com/rockchip-linux"   name="rockchip"/>
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://github.com/openembedded"  name="oe"/>
 
-  <project remote="yocto"     revision="6dd21a9f152a93e2df1178d7a5bd903d7edcf4be" upstream="dunfell"    name="poky"               path="sources/poky"/>
-  <project remote="oe"        revision="5bba79488b7d393d2258d6e917f7bf7b0d7c4073" upstream="dunfell"    name="meta-openembedded"  path="sources/meta-openembedded"/>
-  <project remote="oe"        revision="07dca1e54f82a06939df9b890c6d1ce1e3197f75" upstream="dunfell"    name="meta-python2"       path="sources/meta-python2"/>
-  <project remote="rockchip"  revision="5718cc490614c9978f088bae9548431463bbf7fc" upstream="yocto-next" name="meta-rockchip"      path="sources/meta-rockchip"/>
-
+  <project remote="yocto"     revision="6bd890d9e011014cf323e61267f8b256949d44aa" upstream="pyro" name="poky" path="sources/poky"/>
+  <project remote="oe"        revision="5e82995148a2844c6f483ae5ddd1438d87ea9fb7" upstream="pyro" name="meta-openembedded" path="sources/meta-openembedded"/>
 
 </manifest>
