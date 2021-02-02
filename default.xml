@@ -9,6 +9,7 @@
 
   <project remote="yocto"     revision="569b1f5d67c57de957e243997c53ec2f81dc8dfe" upstream="dunfell" name="poky" path="sources/poky"/>
   <project remote="oe"        revision="5bba79488b7d393d2258d6e917f7bf7b0d7c4073" upstream="dunfell" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="oe"        revision="07dca1e54f82a06939df9b890c6d1ce1e3197f75" upstream="dunfell" name="meta-python2" path="sources/meta-python2"/>
   <project remote="rockchip"  revision="5718cc490614c9978f088bae9548431463bbf7fc" upstream="yocto-next" name="meta-rockchip"  path="sources/meta-rockchip"/>
 
 </manifest>
