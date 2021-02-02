@@ -1,1 +1,22 @@
-rock960-rk3399.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="4" revision="master"/>
+
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://github.com/openembedded"  name="oe"/>
+  <remote fetch="git://github.com/rockchip-linux"  name="rockchip"/>
+  <remote fetch="https://github.com/varigit"       name="taurotech"/>
+
+  <project remote="yocto"     revision="dunfell"    name="poky"               path="sources/poky"/>
+  <project remote="oe"        revision="dunfell"    name="meta-openembedded"  path="sources/meta-openembedded"/>
+  <project remote="oe"        revision="dunfell"    name="meta-python2"       path="sources/meta-python2"/>
+  <project remote="rockchip"  revision="yocto-next" name="meta-rockchip"      path="sources/meta-rockchip"/>
+  <project remote="taurotech" revision="master"     name="meta-taurotech-bsp" path="sources/meta-taurotech-bsp"/>
+
+  <project remote="taurotech" revision="master" name="taurotech-bsp-base" path="sources/base">
+	<copyfile dest="README" src="README"/>
+	<copyfile dest="setup-environment" src="setup-environment"/>
+  </project>
+
+</manifest>
