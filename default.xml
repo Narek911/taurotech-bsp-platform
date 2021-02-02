@@ -16,7 +16,7 @@
   <project remote="taurotech" revision="c0156d5961e755b8934ccfe5ed9fe080b08fa60f" upstream="master"     name="taurotech-bsp-platform" path="sources/taurotech-bsp-platform"/>
 
   <project remote="taurotech" revision="master" name="taurotech-bsp-platform" path="sources/base">
-	  <copyfile dest="README" src="taurotech-bsp-base/README"/>
+	  <copyfile dest="README.md" src="taurotech-bsp-base/README.md"/>
 	  <copyfile dest="setup-environment" src="taurotech-bsp-base/setup-environment"/>
   </project>
 
